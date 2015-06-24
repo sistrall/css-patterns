@@ -10,11 +10,12 @@ body {
   color: papayawhip;
 
   line-height: 1.48;
+  font-family: 'Boogaloo', cursive;
 }
 
 a {
   color: seashell;
-  text-decoration: none;
+  font-weight: bold;
 }
 
 ul, li {
@@ -56,6 +57,16 @@ pre {
   &.future {
     opacity: 0.3;
   }
+}
+
+.slide {
+  height: 90vh;
+
+  background: darkred;
+  border-radius: 1em;
+  padding: 5vh;
+  border-bottom: 1vh solid darken(darkred, 5%);
+  border-top: 1vh solid darken(darkred, 5%);
 }
 
 .opening {

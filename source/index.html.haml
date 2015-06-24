@@ -2,11 +2,11 @@
 title: CSS Patterns
 ---
 
-- t1 = row(2000, 0, 1000, 0, -30)
-- t2 = row(2000, 0, 1000, 0, -15)
-- t3 = row(2000, 0, 1000, 0,   0)
-- t4 = row(2000, 0, 1000, 0, +15)
-- t5 = row(2000, 0, 1000, 0, +30)
+- t1 = row(3500, 0, 1000, 0, -30)
+- t2 = row(3500, 0, 1000, 0, -15)
+- t3 = row(3500, 0, 1000, 0,   0)
+- t4 = row(3500, 0, 1000, 0, +15)
+- t5 = row(3500, 0, 1000, 0, +30)
 
 .step.opening{data: {x: 0, y: 0, scale: 3}}
   :markdown
@@ -44,13 +44,13 @@ title: CSS Patterns
 
 
 
-.step.basic.css-basic{data: t1.next}
+.step.basic.css-basic.slide{data: t1.next}
   :markdown
     What is<br/>CSS?
     ===
 
 
-.step.css-basic{data: t1.next}
+.step.css-basic.slide{data: t1.next}
   :markdown
     Programming language?
     ===
@@ -64,7 +64,7 @@ title: CSS Patterns
 
     ([yes, CSS has more then 16 colors](http://colours.neilorangepeel.com/), use them)
 
-.step.css-basic.elements-of-css{data: t1.next}
+.step.css-basic.elements-of-css.slide{data: t1.next}
   :markdown
     Elements of CSS
     ===
@@ -72,7 +72,7 @@ title: CSS Patterns
     Rules, selectors, properties.<br/>
     And you are (almost) good to go!
 
-.step.css-basic{data: t1.next}
+.step.css-basic.slide{data: t1.next}
   :markdown
     # Different types of basic selector
 
@@ -87,7 +87,7 @@ title: CSS Patterns
 
     There's more, much more, but stick with that, for the moment.
 
-.step.css-basic{data: t1.next}
+.step.css-basic.slide{data: t1.next}
   :markdown
     # Power comes from composition
 
@@ -98,7 +98,7 @@ title: CSS Patterns
          */
         .main-column section header h1 {}
 
-.step.css-basic{data: t1.next}
+.step.css-basic.slide{data: t1.next}
   :markdown
     # Everything is in the **specificity**
 
@@ -122,7 +122,7 @@ title: CSS Patterns
 
 
 
-.step.css-stats{data: t2.next}
+.step.css-stats.slide{data: t2.next}
   :markdown
     # CSS from the real world: stats!
 
@@ -130,7 +130,7 @@ title: CSS Patterns
     * [Medium](https://medium.com/tomorrow-in-progress/how-autonomous-vehicles-gave-us-our-streets-back-d59b4db92bee): [stats](http://cssstats.com/stats?url=https://medium.com/tomorrow-in-progress/how-autonomous-vehicles-gave-us-our-streets-back-d59b4db92bee)
     * [sistrall.it](http://www.sistrall.it/photographs/2015/01/12/cosa-bolle-in-pentola/): [stats](http://cssstats.com/stats?url=http://www.sistrall.it/photographs/2015/01/12/cosa-bolle-in-pentola/)
 
-.step.css-stats{data: t2.next}
+.step.css-stats.slide{data: t2.next}
   :markdown
     Thousands of rules and selectors?
     ===
@@ -138,7 +138,7 @@ title: CSS Patterns
     * Hundreds of properties? What the hell!
     * The point: **it's up to you, dev**.
 
-.step.css-stats{data: t2.next}
+.step.css-stats.slide{data: t2.next}
   :markdown
     The smaller the set of tools a language provides, the more the burden to decide how to use them lies with the developer
     ===
@@ -146,7 +146,7 @@ title: CSS Patterns
     Choose you're best practice<br/>and **stick with it**!
     ---
 
-.step.css-stats{data: t2.next}
+.step.css-stats.slide{data: t2.next}
   :markdown
     # Taming the beast: patterns (or, maybe better, **"architectural framework"**):
 
@@ -158,12 +158,12 @@ title: CSS Patterns
 
 
 
-.step.intro.architectures{data: t3.next}
+.step.intro.architectures.slide{data: t3.next}
   :markdown
     They use different approaches
     ===
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
     OOCSS says: split content from presentation, do it with classes.
     ===
@@ -173,7 +173,7 @@ title: CSS Patterns
         .media .img img {}
         .bd {}
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
     SMACSS
     ===
@@ -181,7 +181,7 @@ title: CSS Patterns
     Is all about categorizing CSS rules
     ---
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
         /* Base rules */
         html, body, form {
@@ -196,7 +196,7 @@ title: CSS Patterns
           color: #039;
         }
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
         /* Layout rules */
         #header, #article, #footer {
@@ -209,7 +209,7 @@ title: CSS Patterns
           border-width: 1px 0 0;
         }
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
         /* Module rules */
         .module > h2 {
@@ -220,7 +220,7 @@ title: CSS Patterns
             padding: 5px;
         }
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
         /* State rules */
         .is-tab-active {
@@ -228,7 +228,7 @@ title: CSS Patterns
           color: black;
         }
 
-.step.architectures{data: t3.next}
+.step.architectures.slide{data: t3.next}
   :markdown
     # BEM moves on and says: select blocks, select elements inside them, when necessary modify them
 
@@ -245,7 +245,7 @@ title: CSS Patterns
 
 
 
-.step.but{data: t4.next}
+.step.but.slide{data: t4.next}
   :markdown
     All these techniques use classes.
     ===
@@ -256,12 +256,12 @@ title: CSS Patterns
     * [Bootstrap](http://getbootstrap.com)
     * [Foundation](http://foundation.zurb.com)
 
-.step.evidence.but{data: t4.next}
+.step.evidence.but.slide{data: t4.next}
   :markdown
     Hell of<br/>classes!
     ===
 
-.step.but{data: t4.next}
+.step.but.slide{data: t4.next}
   :markdown
         <div class="row">
           <div class="col-md-8 col-main">
@@ -276,12 +276,12 @@ title: CSS Patterns
           <div class="col-md-4">1234</div>
         </div>
 
-.step.or.semantic{data: t4.next}
+.step.or.semantic.slide{data: t4.next}
   :markdown
     "semantic" framework<br/>and a CSS preprocessor
     ===
 
-.step.or{data: t4.next}
+.step.or.slide{data: t4.next}
   :markdown
     [Bourbon](http://bourbon.io) plus [Neat](http://neat.bourbon.io)
     plus [SASS](http://sass-lang.com) or [Less](http://lesscss.org)
@@ -306,12 +306,12 @@ title: CSS Patterns
 
 
 
-.step.or.amcss{data: t5.next}
+.step.or.amcss.slide{data: t5.next}
   :markdown
     [AMCSS](https://amcss.github.io)
     ===
 
-.step.or{data: t5.next}
+.step.or.slide{data: t5.next}
   :markdown
     A different direction
     ===
@@ -323,7 +323,7 @@ title: CSS Patterns
     > declares a **separate namespace** for encapsulating style information, resulting
     > in more readable and maintainable HTML & CSS.
 
-.step.or{data: t5.next}
+.step.or.slide{data: t5.next}
   :markdown
 
         /* From: */
@@ -340,7 +340,7 @@ title: CSS Patterns
         [am-Button~="primary"] {}
         [am-Button~="large"] {}
 
-.step.or.the-end{data: t5.next}
+.step.or.the-end.slide{data: t5.next}
   :markdown
     So perfect!
     ===
