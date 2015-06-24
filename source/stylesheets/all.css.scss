@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+@import "bourbon";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: darkred image-url("pattern.png");
+  color: papayawhip;
+
+  line-height: 1.48;
+}
+
+a {
+  color: seashell;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: 'Bangers', cursive;
+}
+
+pre {
+  border-left: 1px solid indianred;
+  padding-left: 0.5em;
+
+  code {
+    font-size: 120%;
+    font-weight: bold;
+  }
+}
+
+.step {
+  box-sizing: border-box;
+
+  width: 1000px;
+
+  transition: opacity 0.25s;
+
+  &.past {
+    opacity: 0.3;
+  }
+
+  &.present {
+    opacity: 1;
+  }
+
+  &.future {
+    opacity: 0.3;
+  }
+}
+
+.opening {
+  width: 60vw;
+  font-size: 5rem;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.sub-opening {
+  text-align: center;
+  width: 40vw;
+}
+
+.diversion {
+  font-size: 5rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.room-stats {
+  text-align: center;
+  font-size: 4rem;
+  transition: opacity 0.5s;
+
+  &.present {
+    opacity: 1;
+  }
+
+  &.past,
+  &.future {
+    opacity: 0.1;
+  }
+
+  h1, h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.css-basic,
+.css-stats,
+.architectures,
+.but,
+.or {
+}
+
+.css-stats,
+.architectures,
+.but,
+.or {
+  font-size: 1.4rem;
+}
+
+.or.semantic {
+  font-size: 2rem;
+}
+
+.basic,
+.architectures.intro,
+.evidence.but {
+  font-size: 4rem;
+  line-height: 1.6em;
+
+  h1 {
+    letter-spacing: 5px;
+  }
+}
+
+.or.amcss {
+  font-size: 8rem;
+  line-height: 20rem;
+}
+
+.or.the-end {
+  font-size: 6rem;
+
+  h1 {
+    margin-bottom: 0.1em;
+  }
+}
+
+.elements-of-css {
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
