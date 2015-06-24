@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>CSS Patterns</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Bangers|Nothing+You+Could+Do" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="impress-not-supported index">
+    <div id="impress" data-transition-duration="500">
+      <div class='step opening' data-scale='3' data-x='0' data-y='0'>
+  <h1 id="css-patterns">CSS patterns</h1>
+</div>
+<div class='step sub-opening' data-rotate='90' data-scale='0.01' data-x='0' data-y='0'>
+  <h1 id="something-to-makebrorder-in-your-css">Something to make<br />order in your CSS</h1>
+</div>
+<div class='step diversion' data-rotate='180' data-scale='0.0001' data-x='1000' data-y='0'>
+  <p>A little diversion from last week:<br />
+  <a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code?</a></p>
+</div>
+<div class='step room-stats' data-x='-2000' data-y='0' data-z='0'>
+  <h1 id="room-stats">Room stats</h1>
+</div>
+<div class='step room-stats' data-x='-2000' data-y='0' data-z='1000'>
+  <h2 id="hands-up">(hands up!)</h2>
+</div>
+<div class='step room-stats' data-x='-2000' data-y='0' data-z='2000'>
+  <ul>
+    <li>How many devs?</li>
+    <li>Do you know CSS?</li>
+    <li>Do you use CSS everyday?</li>
+    <li>Languages similar to CSS?</li>
+  </ul>
+</div>
+<div class='step basic css-basic' data-rotate='-30' data-x='1732.0508075688774' data-y='-999.9999999999999'>
+  <h1 id="what-isbrcss">What is<br />CSS?</h1>
+</div>
+<div class='step css-basic' data-rotate='-30' data-x='2598.076211353316' data-y='-1499.9999999999998'>
+  <h1 id="programming-language">Programming language?</h1>
+  
+  <h2 id="mmmh-not-so-much">Mmmh, not so much</h2>
+  
+  <pre><code>p {&#x000A;  color: beige;&#x000A;}&#x000A;</code></pre>
+  
+  <p>(<a href="http://colours.neilorangepeel.com/">yes, CSS has more then 16 colors</a>, use them)</p>
+</div>
+<div class='step css-basic elements-of-css' data-rotate='-30' data-x='3464.101615137755' data-y='-1999.9999999999998'>
+  <h1 id="elements-of-css">Elements of CSS</h1>
+  
+  <p>Rules, selectors, properties.<br />
+  And you are (almost) good to go!</p>
+</div>
+<div class='step css-basic' data-rotate='-30' data-x='4330.127018922193' data-y='-2499.9999999999995'>
+  <h1 id="different-types-of-basic-selector">Different types of basic selector</h1>
+  
+  <pre><code>/* Element */&#x000A;h1 {}&#x000A;&#x000A;/* Class */&#x000A;.isolated {}&#x000A;&#x000A;/* Identifier */&#x000A;#products {}&#x000A;</code></pre>
+  
+  <p>There's more, much more, but stick with that, for the moment.</p>
+</div>
+<div class='step css-basic' data-rotate='-30' data-x='5196.152422706632' data-y='-2999.9999999999995'>
+  <h1 id="power-comes-from-composition">Power comes from composition</h1>
+  
+  <pre><code>/*&#x000A; * Composition allows to take advantage of&#x000A; * the HTML hierarchies (section and header&#x000A; * are HTML5 elements).&#x000A; */&#x000A;.main-column section header h1 {}&#x000A;</code></pre>
+</div>
+<div class='step css-basic' data-rotate='-30' data-x='6062.177826491071' data-y='-3499.9999999999995'>
+  <h1 id="everything-is-in-the-specificity">Everything is in the <strong>specificity</strong></h1>
+  
+  <pre><code>&lt;header id="excerpt" class="important"&gt;&#x000A;  &lt;h1&gt;I'm the title of the excerpt&lt;/h1&gt;&#x000A;&lt;/header&gt;&#x000A;&#x000A;/*&#x000A; * Who wins?&#x000A; */&#x000A;h1            { color: slategrey; }&#x000A;header h1     { color: bisque;    }&#x000A;.important h1 { color: lavender;  }&#x000A;#excerpt h1   { color: chocolate; }&#x000A;</code></pre>
+  
+  <p><a href="http://specificity.keegan.st/">Specificity calculator</a> and
+  <a href="http://stackoverflow.com/questions/28299817/can-type-selectors-be-repeated-to-increase-specificity">specificity hack</a>
+  may be useful.</p>
+</div>
+<div class='step css-stats' data-rotate='-15' data-x='1931.8516525781367' data-y='-517.6380902050415'>
+  <h1 id="css-from-the-real-world-stats">CSS from the real world: stats!</h1>
+  
+  <ul>
+    <li><a href="https://maptia.com/jacobmaentz/stories/ancestral-waters">Maptia</a>: <a href="http://cssstats.com/stats?url=https%3A%2F%2Fmaptia.com%2Fjacobmaentz%2Fstories%2Fancestral-waters">stats</a></li>
+    <li><a href="https://medium.com/tomorrow-in-progress/how-autonomous-vehicles-gave-us-our-streets-back-d59b4db92bee">Medium</a>: <a href="http://cssstats.com/stats?url=https://medium.com/tomorrow-in-progress/how-autonomous-vehicles-gave-us-our-streets-back-d59b4db92bee">stats</a></li>
+    <li><a href="http://www.sistrall.it/photographs/2015/01/12/cosa-bolle-in-pentola/">sistrall.it</a>: <a href="http://cssstats.com/stats?url=http://www.sistrall.it/photographs/2015/01/12/cosa-bolle-in-pentola/">stats</a></li>
+  </ul>
+</div>
+<div class='step css-stats' data-rotate='-15' data-x='2897.777478867205' data-y='-776.4571353075622'>
+  <h1 id="thousands-of-rules-and-selectors">Thousands of rules and selectors?</h1>
+  
+  <ul>
+    <li>Hundreds of properties? What the hell!</li>
+    <li>The point: <strong>it's up to you, dev</strong>.</li>
+  </ul>
+</div>
+<div class='step css-stats' data-rotate='-15' data-x='3863.7033051562735' data-y='-1035.276180410083'>
+  <h1 id="the-smaller-the-set-of-tools-a-language-provides-the-more-the-burden-to-decide-how-to-use-them-lies-with-the-developer">The smaller the set of tools a language provides, the more the burden to decide how to use them lies with the developer</h1>
+  
+  <h2 id="choose-youre-best-practicebrand-stick-with-it">Choose you're best practice<br />and <strong>stick with it</strong>!</h2>
+</div>
+<div class='step css-stats' data-rotate='-15' data-x='4829.629131445342' data-y='-1294.0952255126037'>
+  <h1 id="taming-the-beast-patterns-or-maybe-better-architectural-framework">Taming the beast: patterns (or, maybe better, <strong>"architectural framework"</strong>):</h1>
+  
+  <ul>
+    <li><a href="https://github.com/stubbornella/oocss/wiki">OOCSS</a> (see, most of all, <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">the media object</a>)</li>
+    <li><a href="https://smacss.com">SMACSS</a></li>
+    <li>BEM (<a href="https://en.bem.info">officially</a>, but look at <a href="https://css-tricks.com/bem-101/">this</a> and <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">this</a>)</li>
+  </ul>
+</div>
+<div class='step intro architectures' data-rotate='0' data-x='2000.0' data-y='0.0'>
+  <h1 id="they-use-different-approaches">They use different approaches</h1>
+</div>
+<div class='step architectures' data-rotate='0' data-x='3000.0' data-y='0.0'>
+  <h1 id="oocss-says-split-content-from-presentation-do-it-with-classes">OOCSS says: split content from presentation, do it with classes.</h1>
+  
+  <pre><code>.media {}&#x000A;.media .img {}&#x000A;.media .img img {}&#x000A;.bd {}&#x000A;</code></pre>
+</div>
+<div class='step architectures' data-rotate='0' data-x='4000.0' data-y='0.0'>
+  <h1 id="smacss">SMACSS</h1>
+  
+  <h2 id="is-all-about-categorizing-css-rules">Is all about categorizing CSS rules</h2>
+</div>
+<div class='step architectures' data-rotate='0' data-x='5000.0' data-y='0.0'>
+  <pre><code>/* Base rules */&#x000A;html, body, form {&#x000A;  margin: 0; padding: 0;&#x000A;}&#x000A;&#x000A;input[type=text] {&#x000A;  border: 1px solid #999;&#x000A;}&#x000A;&#x000A;a {&#x000A;  color: #039;&#x000A;}&#x000A;</code></pre>
+</div>
+<div class='step architectures' data-rotate='0' data-x='6000.0' data-y='0.0'>
+  <pre><code>/* Layout rules */&#x000A;#header, #article, #footer {&#x000A;  width: 960px;&#x000A;  margin: auto;&#x000A;}&#x000A;&#x000A;#article {&#x000A;  border: solid #CCC;&#x000A;  border-width: 1px 0 0;&#x000A;}&#x000A;</code></pre>
+</div>
+<div class='step architectures' data-rotate='0' data-x='7000.0' data-y='0.0'>
+  <pre><code>/* Module rules */&#x000A;.module &gt; h2 {&#x000A;    padding: 5px;&#x000A;}&#x000A;&#x000A;.module span {&#x000A;    padding: 5px;&#x000A;}&#x000A;</code></pre>
+</div>
+<div class='step architectures' data-rotate='0' data-x='8000.0' data-y='0.0'>
+  <pre><code>/* State rules */&#x000A;.is-tab-active {&#x000A;  background-color: white;&#x000A;  color: black;&#x000A;}&#x000A;</code></pre>
+</div>
+<div class='step architectures' data-rotate='0' data-x='9000.0' data-y='0.0'>
+  <h1 id="bem-moves-on-and-says-select-blocks-select-elements-inside-them-when-necessary-modify-them">BEM moves on and says: select blocks, select elements inside them, when necessary modify them</h1>
+  
+  <pre><code>.media {}&#x000A;.media__img {}&#x000A;.media__img img {}&#x000A;.media__bd {}&#x000A;&#x000A;.media--reverse {}&#x000A;</code></pre>
+  
+  <p>(and do all this stuff respecting a strict convention on class names)</p>
+</div>
+<div class='step but' data-rotate='15' data-x='1931.8516525781367' data-y='517.6380902050415'>
+  <h1 id="all-these-techniques-use-classes">All these techniques use classes.</h1>
+  
+  <p>That's fine, but&#8230; what if you decide to use a
+  front-end framework based on classes too? Like, let's say:</p>
+  
+  <ul>
+    <li><a href="http://getbootstrap.com">Bootstrap</a></li>
+    <li><a href="http://foundation.zurb.com">Foundation</a></li>
+  </ul>
+</div>
+<div class='step evidence but' data-rotate='15' data-x='2897.777478867205' data-y='776.4571353075622'>
+  <h1 id="hell-ofbrclasses">Hell of<br />classes!</h1>
+</div>
+<div class='step but' data-rotate='15' data-x='3863.7033051562735' data-y='1035.276180410083'>
+  <pre><code>&lt;div class="row"&gt;&#x000A;  &lt;div class="col-md-8 col-main"&gt;&#x000A;    &lt;p class="text-lowercase"&gt;A&lt;/p&gt;&#x000A;  &lt;/div&gt;&#x000A;  &lt;div class="col-md-4"&gt;&#x000A;    &lt;p class="text-lowercase"&gt;B&lt;/p&gt;&#x000A;  &lt;/div&gt;&#x000A;&lt;/div&gt;&#x000A;&lt;div class="row"&gt;&#x000A;  &lt;div class="col-md-8"&gt;Entry level&lt;/div&gt;&#x000A;  &lt;div class="col-md-4"&gt;1234&lt;/div&gt;&#x000A;&lt;/div&gt;&#x000A;</code></pre>
+</div>
+<div class='step or semantic' data-rotate='15' data-x='4829.629131445342' data-y='1294.0952255126037'>
+  <h1 id="semantic-frameworkbrand-a-css-preprocessor">"semantic" framework<br />and a CSS preprocessor</h1>
+</div>
+<div class='step or' data-rotate='15' data-x='5795.55495773441' data-y='1552.9142706151245'>
+  <p><a href="http://bourbon.io">Bourbon</a> plus <a href="http://neat.bourbon.io">Neat</a>
+  plus <a href="http://sass-lang.com">SASS</a> or <a href="http://lesscss.org">Less</a></p>
+  
+  <p>In HTML:</p>
+  
+  <pre><code>&lt;section&gt;&#x000A;  &lt;aside&gt;What is it about?&lt;/aside&gt;&#x000A;  &lt;article&gt;Semantic grid framework...&lt;/article&gt;&#x000A;&lt;/section&gt;&#x000A;</code></pre>
+  
+  <p>And in CSS:</p>
+  
+  <pre><code>section {&#x000A;  @include outer-container;&#x000A;&#x000A;  aside { @include span-columns(3); }&#x000A;  article { @include span-columns(9); }&#x000A;}&#x000A;</code></pre>
+</div>
+<div class='step or amcss' data-rotate='30' data-x='1732.0508075688774' data-y='999.9999999999999'>
+  <h1 id="amcsshttpsamcssgithubio"><a href="https://amcss.github.io">AMCSS</a></h1>
+</div>
+<div class='step or' data-rotate='30' data-x='2598.076211353316' data-y='1499.9999999999998'>
+  <h1 id="a-different-direction">A different direction</h1>
+  
+  <blockquote>
+    <p>Attribute Modules (AM) is a technique for <strong>using HTML attributes and their values</strong>
+  rather than classes for styling elements.</p>
+  
+    <p>In doing so, each attribute effectively
+  declares a <strong>separate namespace</strong> for encapsulating style information, resulting
+  in more readable and maintainable HTML &amp; CSS.</p>
+  </blockquote>
+</div>
+<div class='step or' data-rotate='30' data-x='3464.101615137755' data-y='1999.9999999999998'>
+  <pre><code>/* From: */&#x000A;&lt;a class="btn btn-primary btn-lg"&gt;Click me!&lt;/a&gt;&#x000A;&#x000A;/* To: */&#x000A;&lt;a am-Button="primary large"&gt;Click me!&lt;/a&gt;&#x000A;&#x000A;/* Or: */&#x000A;&lt;a data-am-Button="primary large"&gt;Click me!&lt;/a&gt;&#x000A;&#x000A;/* In CSS: */&#x000A;[am-Button] {}&#x000A;[am-Button~="primary"] {}&#x000A;[am-Button~="large"] {}&#x000A;</code></pre>
+</div>
+<div class='step or the-end' data-rotate='30' data-x='4330.127018922193' data-y='2499.9999999999995'>
+  <h1 id="so-perfect">So perfect!</h1>
+  
+  <ul>
+    <li><a href="https://github.com/sistrall/amcss">amcss</a></li>
+    <li><a href="https://github.com/sistrall/amcss-rails">amcss-rails</a></li>
+  </ul>
+</div>
+<div class='step' data-scale='10' data-x='0' data-y='0' id='overview'></div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js" type="text/javascript"></script>
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+    <script>impress().init();</script>
+  </body>
+</html>

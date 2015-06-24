@@ -1,0 +1,126 @@
+/* line 5, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: darkred url("/images/pattern.png");
+  color: papayawhip;
+  line-height: 1.48; }
+
+/* line 15, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+a {
+  color: seashell;
+  text-decoration: none; }
+
+/* line 20, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 26, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: 'Bangers', cursive; }
+
+/* line 31, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+pre {
+  border-left: 1px solid indianred;
+  padding-left: 0.5em; }
+  /* line 35, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  pre code {
+    font-size: 120%;
+    font-weight: bold; }
+
+/* line 41, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.step {
+  box-sizing: border-box;
+  width: 1000px;
+  transition: opacity 0.25s; }
+  /* line 48, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .step.past {
+    opacity: 0.3; }
+  /* line 52, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .step.present {
+    opacity: 1; }
+  /* line 56, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .step.future {
+    opacity: 0.3; }
+
+/* line 61, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.opening {
+  width: 60vw;
+  font-size: 5rem; }
+  /* line 65, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .opening h1 {
+    margin: 0;
+    text-align: center; }
+
+/* line 71, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.sub-opening {
+  text-align: center;
+  width: 40vw; }
+
+/* line 76, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.diversion {
+  font-size: 5rem; }
+  /* line 79, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .diversion h1 {
+    text-align: center; }
+
+/* line 84, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.room-stats {
+  text-align: center;
+  font-size: 4rem;
+  transition: opacity 0.5s; }
+  /* line 89, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .room-stats.present {
+    opacity: 1; }
+  /* line 93, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .room-stats.past, .room-stats.future {
+    opacity: 0.1; }
+  /* line 98, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .room-stats h1, .room-stats h2 {
+    text-align: center;
+    margin: 0 auto; }
+
+/* line 111, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.css-stats,
+.architectures,
+.but,
+.or {
+  font-size: 1.4rem; }
+
+/* line 118, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.or.semantic {
+  font-size: 2rem; }
+
+/* line 122, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.basic,
+.architectures.intro,
+.evidence.but {
+  font-size: 4rem;
+  line-height: 1.6em; }
+  /* line 128, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .basic h1,
+  .architectures.intro h1,
+  .evidence.but h1 {
+    letter-spacing: 5px; }
+
+/* line 133, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.or.amcss {
+  font-size: 8rem;
+  line-height: 20rem; }
+
+/* line 138, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.or.the-end {
+  font-size: 6rem; }
+  /* line 141, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+  .or.the-end h1 {
+    margin-bottom: 0.1em; }
+
+/* line 147, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.elements-of-css h1 {
+  font-size: 4rem; }
+/* line 150, /Users/sistrall/Documents/CSS Patterns/Working Copies/css-patterns/source/stylesheets/all.css.scss */
+.elements-of-css p {
+  font-size: 2rem; }
